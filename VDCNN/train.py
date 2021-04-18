@@ -18,6 +18,7 @@ def get_params(cfgpath):
         params = json.loads(io.read())
     return params
 
+
 def load_data(params):     
     tokenizer = JamoTokenizer()
     padder = PadSequence(length=params.get('pad_length'))
